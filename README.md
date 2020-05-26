@@ -6,5 +6,5 @@ Currently only a non-vr version is available as. Hence, the name "novr".
 The project is under development and an OpenVR version will be added soon.
 
 
-Instructions for installation coming soon.
+### Instructions for installation and usage coming soon.
 
