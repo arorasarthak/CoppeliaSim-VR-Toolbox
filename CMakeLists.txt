@@ -33,8 +33,4 @@ add_executable(vtk_renderer main.cpp
 
 target_link_libraries(vtk_renderer PRIVATE ${VTK_LIBRARIES})
 
-#vtk_module_autoinit(
-#    TARGETS vtk_renderer
-#    MODULES ${VTK_LIBRARIES}
-#    )
 
