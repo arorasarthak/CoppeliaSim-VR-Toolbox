@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(vtk_renderer)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 if(APPLE)
     set(CMAKE_OSX_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk")
@@ -32,3 +32,9 @@ add_executable(vtk_renderer main.cpp
         )
 
 target_link_libraries(vtk_renderer PRIVATE ${VTK_LIBRARIES})
+
+#vtk_module_autoinit(
+#    TARGETS vtk_renderer
+#    MODULES ${VTK_LIBRARIES}
+#    )
+

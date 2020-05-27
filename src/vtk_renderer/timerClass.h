@@ -54,7 +54,9 @@ private:
 	int mode = 0;
 	int chartCounter = 0;
 	std::string text;
-	std::chrono::steady_clock::time_point t1;
-	std::chrono::steady_clock::time_point t2;
+	//std::chrono::steady_clock::time_point t1;
+	//std::chrono::steady_clock::time_point t2;
+	std::chrono::high_resolution_clock::time_point t1;
+	std::chrono::high_resolution_clock::time_point t2;
 };
 
