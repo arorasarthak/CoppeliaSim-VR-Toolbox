@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(vtk_renderer)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 
 if(APPLE)
     set(CMAKE_OSX_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk")
@@ -17,7 +17,7 @@ find_package(VTK REQUIRED)
 message (STATUS "VTK_VERSION: ${VTK_VERSION}")
 include(${VTK_USE_FILE})
 
-add_executable(vtk_renderer main.cpp
+add_executable(vtk_renderer src/main.cpp
         src/vtk_renderer/timerClass.h src/vtk_renderer/timerClass.cpp
         src/vtk_renderer/pathObject.h src/vtk_renderer/pathObject.cpp
         src/vtk_renderer/vrep_volume_grid.h src/vtk_renderer/vrep_volume_grid.cpp
@@ -32,5 +32,3 @@ add_executable(vtk_renderer main.cpp
         )
 
 target_link_libraries(vtk_renderer PRIVATE ${VTK_LIBRARIES})
-
-

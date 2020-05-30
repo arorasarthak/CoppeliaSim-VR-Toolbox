@@ -10,11 +10,11 @@
 // should be a corresponding call to simxFinish at the end!
 
 extern "C" {
-#include "src/remoteAPI/extApi.h"
+#include "remoteAPI/extApi.h"
 }
 #include <iostream>
-#include "src/vtk_renderer/vrep_scene_content.h"
-#include "src/vtk_renderer/renderwindow_support.h"
+#include "vtk_renderer/vrep_scene_content.h"
+#include "vtk_renderer/renderwindow_support.h"
 
 using namespace std;
 
