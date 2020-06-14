@@ -8,3 +8,4 @@ The project is under development and an OpenVR version will be added soon.
 
 ### Instructions for installation and usage coming soon.
 
+[![Video](https://img.youtube.com/vi/KluSxrtEzXM/0.jpg)](https://www.youtube.com/watch?v=KluSxrtEzXM?t=5s "Video")
